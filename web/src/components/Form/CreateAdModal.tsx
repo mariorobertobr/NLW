@@ -22,10 +22,13 @@ interface propAds {
 
 export function CreateAdModal() {
 
+
+    const [teste, setTeste] = useState(false);
     const [games, setGames] = useState<Game[]>([]);
     const [weekDays, setWeekDays] = useState<string[]>([]);
     const [useVoiceChannel, setVoiceChannel] = useState(false)
     const [createUser, setCreateUser] = useState(0)
+    const [velho, setVelho] = useState(false);
 
 
     useEffect(() => {
